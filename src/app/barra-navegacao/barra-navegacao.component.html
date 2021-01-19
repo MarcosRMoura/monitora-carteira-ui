@@ -1,0 +1,23 @@
+<nav class="navbar">
+
+  <div class="fc-view-container">
+
+    <div class="p-grid">
+      <div class="p-col-12">
+        <a (click)="exibeMenu = !exibeMenu"><i class="pi pi-bars"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <ul [hidden]="!exibeMenu" class="navbar-menu">
+    <li class="navbar-usuario">Usuário-Logado</li>
+    <li class="navbar-menu-item"><span (click)="clickNavBar()">Usuário</span></li>
+    <li class="navbar-menu-item"><span (click)="clickNavBar()">Corretora</span></li>
+    <li class="navbar-menu-item"><span (click)="clickNavBar()">Negociações</span></li>
+    <li class="navbar-menu-item"><span (click)="clickNavBar()">Operações</span></li>
+    <li class="navbar-menu-item"><span (click)="clickNavBar()">Carteiras</span></li>
+    <li class="navbar-menu-item"><span (click)="clickNavBar()">Ativos</span></li>
+    <li class="navbar-menu-item"><span (click)="clickNavBar()">Logout</span></li>
+  </ul>
+
+</nav>
