@@ -1,0 +1,99 @@
+<div class="p-grid">
+
+  <div class="p-col-12">
+    <h1>Cadastro de Usuário</h1>
+    <div class="card card-w-title">
+
+      <form #form="ngForm" (ngSubmit)="save()" novalidate>
+
+        <div class="p-grid">
+          <div class="p-col-3  padding-left-30">
+            <label for="nonome">Nome: </label>
+            <input [(ngModel)]="usuarioForm.noNome" id="nonome" name="nonome" pInputText type="text"/>
+          </div>
+
+          <div class="p-col-3  padding-left-30">
+            <label for="nucpf">CPF: </label>
+            <input [(ngModel)]="usuarioForm.nuCpf" id="nucpf" name="nucpf" pInputText type="text"/>
+          </div>
+
+          <div class="p-col-3">
+            <div class="p-field-radiobutton ">
+              <p-radioButton [(ngModel)]="usuarioForm.noSexo" id="nosexo-masculino" name="nosexo-masculino"
+                             value="masculino"></p-radioButton>
+              <label for="nosexo-masculino">Masculino</label>
+            </div>
+            <div class="p-field-radiobutton">
+              <p-radioButton [(ngModel)]="usuarioForm.noSexo" id="nosexo-feminino" name="nosexo-feminino"
+                             value="feminino"></p-radioButton>
+              <label for="nosexo-feminino">Feminino</label>
+            </div>
+          </div>
+
+          <div class="p-col-3">
+            <label for="dtnascimento">Data de Nascimento: </label>
+            <p-calendar [(ngModel)]="usuarioForm.dtNascimento"
+                        id="dtnascimento"
+                        name="dtnascimento">
+            </p-calendar>
+          </div>
+
+          <div class="p-grid">
+            <div class="p-col-12">
+              <h1>Endereço</h1>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="noendereco">Rua: </label>
+              <input [(ngModel)]="usuarioForm.noEndereco" id="noendereco" name="noendereco" pInputText type="text"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="nuendereco">Número: </label>
+              <input [(ngModel)]="usuarioForm.nuEndereco" id="nuendereco" name="nuendereco" pInputText type="number"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="nobairro">Bairro: </label>
+              <input [(ngModel)]="usuarioForm.noBairro" id="nobairro" name="nobairro" pInputText type="text"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="noCidade">Cidade: </label>
+              <input [(ngModel)]="usuarioForm.noCidade" id="noCidade" name="noCidade" pInputText type="text"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="nucep">Cep: </label>
+              <input [(ngModel)]="usuarioForm.nuCep" id="nucep" name="nucep" pInputText type="number"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="noestado">Estado: </label>
+              <input [(ngModel)]="usuarioForm.noEstado" id="noestado" name="noestado" pInputText type="text"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="nopais">Pais: </label>
+              <input [(ngModel)]="usuarioForm.noPais" id="nopais" name="nopais" pInputText type="text"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="nutelefone">Telefone: </label>
+              <input [(ngModel)]="usuarioForm.nuTelefone" id="nutelefone" name="nutelefone" pInputText type="tel"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="noemail">Email: </label>
+              <input [(ngModel)]="usuarioForm.noEmail" id="noemail" name="noemail" pInputText type="email"/>
+            </div>
+
+          </div>
+
+          <div class="p-col-1 p-offset-9">
+            <p-button label="Limpar" type="reset"></p-button>
+          </div>
+          <div class="p-col-1">
+            <p-button label="Salvar" type="submit"></p-button>
+          </div>
+          <!--          <button pButton type="button" label="Click" ></button>-->
+          <!--          <p-button label="Click" (onClick)="save()" ></p-button>-->
+
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>

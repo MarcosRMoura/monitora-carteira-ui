@@ -1,9 +1,7 @@
-export class UsuarioForm {
+export class CorretoraForm {
   id: number;
   noNome: string;
-  nuCpf: string;
-  noSexo: string;
-  dtNascimento: Date;
+  nuCnpj: string;
   noEndereco: string;
   nuEndereco: string;
   noBairro: string;
@@ -13,4 +11,5 @@ export class UsuarioForm {
   noPais: string;
   nuTelefone: string;
   noEmail: string;
+  noSite: string;
 }

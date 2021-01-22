@@ -3,7 +3,33 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: '/api',
+  usuarioUrl: '/monitora-carteira/api',
+  usuario: {
+
+
+    // servicosExternos: {
+    //   dadosBancariosUrl: '/dadosbancarios/api',
+    //   integraUrl: '/integra/api',
+    //   enderecosUrl: '/enderecos/api',
+    //   servparticipanteUrl: '/servparticipante/api',
+    //   servdominioUrl: '/servdominio/api',
+    //   batchUrl: '/servicosexternosbatch/api',
+
+  },
+  auth: {
+    baseUrl: '',
+    authUrl: '/login/cas',
+    loginUrl: '/api/login',
+    logoutUrl: '/cas/logout',
+    detailsUrl: '/api/user/details',
+    tokenValidationUrl: '/api/token/validate',
+    storage: localStorage,
+    tokenStorageIndex: 'token',
+    userStorageIndex: 'user',
+    loginSuccessRoute: ''
+  }
 };
 
 /*

@@ -1,9 +1,3 @@
-// import {RouterModule, Routes} from "@angular/router";
-// import {ModuleWithProviders} from "@angular/core";
-// import {AuthGuard} from "@nuvem/angular-base";
-// import {ConsultarNotificacaoComponent} from "./consultar-notificacao/consultar-notificacao.component";
-// import {VisualizarNotificacaoComponent} from "./visualizar-notificacao/visualizar-notificacao.component";
-// import {EditarNotificacaoComponent} from "./editar-notificacao/editar-notificacao.component";
 import {CadastarUsuarioComponent} from './cadastar-usuario/cadastar-usuario.component';
 import {RouterModule, Routes} from '@angular/router';
 import {ModuleWithProviders} from '@angular/core';
