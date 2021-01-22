@@ -1,0 +1,97 @@
+<div class="p-grid">
+
+  <div class="p-col-12">
+    <h1>Cadastro de Ativo</h1>
+    <div class="card card-w-title">
+
+      <form #form="ngForm" (ngSubmit)="save()" novalidate>
+
+        <div class="p-grid">
+          <div class="p-col-3  padding-left-30">
+            <label for="nonome">Nome: </label>
+            <input [(ngModel)]="ativo" id="nonome" name="nonome" pInputText type="text"/>
+          </div>
+
+          <!--          <div class="p-col-3  padding-left-30">-->
+          <!--            <label for="nucpf">CPF: </label>-->
+          <!--            <input id="nucpf" name="nucpf" [(ngModel)]="usuarioForm.nuCpf" pInputText type="text"/>-->
+          <!--          </div>-->
+
+          <!--          <div class="p-col-3">-->
+          <!--            <div class="p-field-radiobutton ">-->
+          <!--              <p-radioButton id="nosexo-masculino" name="nosexo-masculino" value="masculino" [(ngModel)]="usuarioForm.noSexo"></p-radioButton>-->
+          <!--              <label for="nosexo-masculino">Masculino</label>-->
+          <!--            </div>-->
+          <!--            <div class="p-field-radiobutton">-->
+          <!--              <p-radioButton id="nosexo-feminino" name="nosexo-feminino" value="feminino" [(ngModel)]="usuarioForm.noSexo"></p-radioButton>-->
+          <!--              <label for="nosexo-feminino">Feminino</label>-->
+          <!--            </div>-->
+          <!--          </div>-->
+
+          <!--          <div class="p-col-3">-->
+          <!--            <label for="dtnascimento">Data de Nascimento: </label>-->
+          <!--            <p-calendar [(ngModel)]="usuarioForm.dtNascimento"-->
+          <!--                        id="dtnascimento"-->
+          <!--                        name="dtnascimento">-->
+          <!--            </p-calendar>-->
+          <!--          </div>-->
+
+          <!--          <div class="p-grid">-->
+          <!--            <div class="p-col-12">-->
+          <!--              <h1>Endereço</h1>-->
+          <!--            </div>-->
+          <!--            <div class="p-col-3  padding-left-30">-->
+          <!--              <label for="noendereco">Rua: </label>-->
+          <!--              <input id="noendereco" name="noendereco" [(ngModel)]="usuarioForm.noEndereco" pInputText type="text"/>-->
+          <!--            </div>-->
+          <!--            <div class="p-col-3  padding-left-30">-->
+          <!--              <label for="nuendereco">Número: </label>-->
+          <!--              <input id="nuendereco" name="nuendereco" [(ngModel)]="usuarioForm.nuEndereco" pInputText type="number"/>-->
+          <!--            </div>-->
+          <!--            <div class="p-col-3  padding-left-30">-->
+          <!--              <label for="nobairro">Bairro: </label>-->
+          <!--              <input id="nobairro" name="nobairro" [(ngModel)]="usuarioForm.noBairro" pInputText type="text"/>-->
+          <!--            </div>-->
+          <!--            <div class="p-col-3  padding-left-30">-->
+          <!--              <label for="noCidade">Cidade: </label>-->
+          <!--              <input id="noCidade" name="noCidade" [(ngModel)]="usuarioForm.noCidade" pInputText type="text"/>-->
+          <!--            </div>-->
+          <!--            <div class="p-col-3  padding-left-30">-->
+          <!--              <label for="nucep">Cep: </label>-->
+          <!--              <input id="nucep" name="nucep" [(ngModel)]="usuarioForm.nuCep" pInputText type="number"/>-->
+          <!--            </div>-->
+          <!--            <div class="p-col-3  padding-left-30">-->
+          <!--              <label for="noestado">Estado: </label>-->
+          <!--              <input id="noestado" name="noestado" [(ngModel)]="usuarioForm.noEstado" pInputText type="text"/>-->
+          <!--            </div>-->
+          <!--            <div class="p-col-3  padding-left-30">-->
+          <!--              <label for="nopais">Pais: </label>-->
+          <!--              <input id="nopais" name="nopais" [(ngModel)]="usuarioForm.noPais" pInputText type="text"/>-->
+          <!--            </div>-->
+          <!--            <div class="p-col-3  padding-left-30">-->
+          <!--              <label for="nutelefone">Telefone: </label>-->
+          <!--              <input id="nutelefone" name="nutelefone" [(ngModel)]="usuarioForm.nuTelefone" pInputText type="tel"/>-->
+          <!--            </div>-->
+          <!--            <div class="p-col-3  padding-left-30">-->
+          <!--              <label for="noemail">Email: </label>-->
+          <!--              <input id="noemail" name="noemail" [(ngModel)]="usuarioForm.noEmail" pInputText type="email"/>-->
+          <!--            </div>-->
+
+          <!--          </div>-->
+
+          <div class="p-col-1 p-offset-9">
+            <p-button label="Limpar" type="reset"></p-button>
+          </div>
+          <div class="p-col-1">
+            <p-button label="Salvar" type="submit"></p-button>
+          </div>
+          <!--          <button pButton type="button" label="Click" ></button>-->
+          <!--          <p-button label="Click" (onClick)="save()" ></p-button>-->
+
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+<div class="p-grid">
+
+  <div class="p-col-12">
+    <h1>Cadastro de Corretora</h1>
+    <div class="card card-w-title">
+
+      <form #form="ngForm" (ngSubmit)="save()" novalidate>
+
+        <div class="p-grid">
+          <div class="p-col-3  padding-left-30">
+            <label for="nonome">Nome: </label>
+            <input [(ngModel)]="corretoraForm.noNome" id="nonome" name="nonome" pInputText type="text"/>
+          </div>
+
+          <div class="p-col-3  padding-left-30">
+            <label for="nucpf">CNPJ: </label>
+            <input [(ngModel)]="corretoraForm.nuCnpj" id="nucpf" name="nucpf" pInputText type="text"/>
+          </div>
+
+          <div class="p-grid">
+            <div class="p-col-12">
+              <h1>Endereço</h1>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="noendereco">Rua: </label>
+              <input [(ngModel)]="corretoraForm.noEndereco" id="noendereco" name="noendereco" pInputText type="text"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="nuendereco">Número: </label>
+              <input [(ngModel)]="corretoraForm.nuEndereco" id="nuendereco" name="nuendereco" pInputText type="number"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="nobairro">Bairro: </label>
+              <input [(ngModel)]="corretoraForm.noBairro" id="nobairro" name="nobairro" pInputText type="text"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="noCidade">Cidade: </label>
+              <input [(ngModel)]="corretoraForm.noCidade" id="noCidade" name="noCidade" pInputText type="text"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="nucep">Cep: </label>
+              <input [(ngModel)]="corretoraForm.nuCep" id="nucep" name="nucep" pInputText type="number"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="noestado">Estado: </label>
+              <input [(ngModel)]="corretoraForm.noEstado" id="noestado" name="noestado" pInputText type="text"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="nopais">Pais: </label>
+              <input [(ngModel)]="corretoraForm.noPais" id="nopais" name="nopais" pInputText type="text"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="nutelefone">Telefone: </label>
+              <input [(ngModel)]="corretoraForm.nuTelefone" id="nutelefone" name="nutelefone" pInputText type="tel"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="noemail">Email: </label>
+              <input [(ngModel)]="corretoraForm.noEmail" id="noemail" name="noemail" pInputText type="email"/>
+            </div>
+            <div class="p-col-3  padding-left-30">
+              <label for="nosite">Email: </label>
+              <input [(ngModel)]="corretoraForm.noSite" id="nosite" name="nosite" pInputText type="email"/>
+            </div>
+
+          </div>
+
+          <div class="p-col-1 p-offset-9">
+            <p-button label="Limpar" type="reset"></p-button>
+          </div>
+          <div class="p-col-1">
+            <p-button label="Salvar" type="submit"></p-button>
+          </div>
+          <!--          <button pButton type="button" label="Click" ></button>-->
+          <!--          <p-button label="Click" (onClick)="save()" ></p-button>-->
+
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
